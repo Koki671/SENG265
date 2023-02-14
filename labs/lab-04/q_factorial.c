@@ -58,8 +58,7 @@ int main(int argc, char *argv[])
         factorial *= i;
     }
 
-    printf("%d\n", factorial);
+    printf("%d \n", factorial);
     return 0;
-
 }
 }
