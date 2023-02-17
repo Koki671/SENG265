@@ -230,4 +230,9 @@ void printflight(char *airline, char *srcCountry, char *srcCity, char *destCount
        if(counter == 0){
         fprintf(ofp, "NO RESULTS FOUND.");
     }
+<<<<<<< HEAD
 }
+=======
+  }
+  
+>>>>>>> 627345ce7f0b82419a260a6d8385c522168f7a4d
