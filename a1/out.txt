@@ -1,0 +1,10 @@
+FRIGHTS FROM India TO Japan:
+AIRLINE: Jet Airways (JAI)ORIGIN: Chhatrapati Shivaji Intl (VABB), Mumbai
+FRIGHTS FROM India TO Japan:
+AIRLINE: Air India Limited (AIC)ORIGIN: Indira Gandhi Intl (VIDP), Delhi
+FRIGHTS FROM India TO Japan:
+AIRLINE: Japan Airlines (JAL)ORIGIN: Indira Gandhi Intl (VIDP), Delhi
+FRIGHTS FROM India TO Japan:
+AIRLINE: All Nippon Airways (ANA)ORIGIN: Chhatrapati Shivaji Intl (VABB), Mumbai
+FRIGHTS FROM India TO Japan:
+AIRLINE: All Nippon Airways (ANA)ORIGIN: Indira Gandhi Intl (VIDP), Delhi
