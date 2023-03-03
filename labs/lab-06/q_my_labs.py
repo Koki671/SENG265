@@ -11,6 +11,7 @@ def main():
     """
     Create a datetime object for today's date
     """
+    
 
     # COMPLETE IMPLEMENTATION
     todays_date = None
