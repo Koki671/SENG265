@@ -11,11 +11,7 @@ def main():
     """
     Create a datetime object for today's date
     """
-    
-
-    # COMPLETE IMPLEMENTATION
-    todays_date = None
-
+    todays_date = datetime.datetime.today()
     date_list = every_lab(todays_date)
 
     """ 
@@ -24,7 +20,8 @@ def main():
     print these dates in the format "Mon, 15 Jan 21"
     """
 
-    # COMPLETE IMPLEMENTATION
+    for date in date_list:
+        print(date.strftime("%a, %d %b %y"))
 
     
 
@@ -37,8 +34,18 @@ def every_lab(todays_date):
     This function will create datetimes objects for those labs, 
     add them to a list and then return this list
     """
+    
+    lab_dates = []
 
-    # COMPLETE IMPLEMENTATION
+    
+    start_date = todays_date + datetime.timedelta(days=(7 - todays_date.weekday()))
+
+    # Loop through the remaining weeks of the year
+    for i in range(4):
+        lab_dates.append(start_date)
+        start_date += datetime.timedelta(days=7)
+    return lab_dates
+
 
 
 if __name__ == "__main__":
