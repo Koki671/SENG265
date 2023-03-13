@@ -9,7 +9,6 @@ Sample input: --AIRLINES="airlines.yaml" --AIRPORTS="airports.yaml" --ROUTES="ro
 """
 import numpy as np
 import csv
-import sys
 import yaml
 import pandas as pd
 import matplotlib.pyplot as plt
