@@ -10,7 +10,7 @@ Student login:  kokiitagaki
 (1) route_manager.c submitted and named appropriately; compiles and runs
 without errors or warnings.
 
-- No, the code does not compile.
+- Yes, it was.
 
 See compilation output below:
 ./compile.py (INFO): Compiling route_manager.c using "gcc route_manager.c -o route_manager"...
@@ -30,21 +30,26 @@ route_manager.c:238:9: error: invalid suffix "ce7f0b82419a260a6d8385c522168f7a4d
       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ./compile.py (INFO): info/warning/error messages from compilation shown above.
 
+-REGRADE: All tests passed.
+
 -----
 (2) Tests passed (and further comments)
 
-- N/A
+- REGRADE: All passed.
 
 -----
 (3) Code formatting and structure:
 
-- N/A
 
 Positive aspects:
 
+- Good formatting, naming of variables and documentation.
+
 Improvement opportunities:
+
+- Avoid having large functions.
 
 -----
 
-GRADE: F
-MARKS: 0
+GRADE: A+
+MARKS: 95
