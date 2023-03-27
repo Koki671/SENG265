@@ -13,6 +13,69 @@
 #include "list.h"
 
 /**
+Function: order_sort
+*-------------------------------------------------------
+* @brief This function sorts a linked list of nodes in descending
+*order of their statistic value. If the linked list already has
+*a node with the same val1 value as the new node, the existing node's 
+*statistic value is incremented, and it is moved to its correct position in the list. 
+*If there is no node with the same val1 value, the new node is inserted in its
+*correct position in the list.
+* @param head a pointer to the head of the linked list
+* @param new a pointer to the node to be inserted in the list
+* @return a pointer to the head of the sorted linked list
+*/
+node_t * order_sort(node_t* head, node_t* new)
+{
+    if (!head) {
+        new->next = NULL;
+        return new;
+    }
+    // pointers to traverse the list
+    node_t * cur;
+    node_t * prev = NULL;
+    int same = 0;
+    for (cur = head; cur != NULL; cur = cur->next){
+		
+        if (!strcmp(new->val1, cur->val1) && !same) {
+            cur->statistic++;
+            same = 1;
+
+         // remove the current node from the list
+            if (prev != NULL){
+                 prev->next = cur->next;
+            }else{ return cur; 
+            }
+            new = cur;
+            cur = head;
+			prev = NULL;
+        }
+ // compare the statistics of the new node and the current node to find their correct position
+        if (new->statistic < cur->statistic) {
+            prev = cur;
+        } else if (new->statistic > cur->statistic) {
+            break;
+        } else if (strcmp(new->val1, cur->val1) > 0) {
+            prev = cur;
+        } else {
+            break;
+        }
+    }
+
+    // insert the new node at its correct position in the list
+    new->next = cur;
+    if (prev == NULL) {
+        new->next = head;
+        return new;
+    } else {
+        node_t *tmp = prev->next;
+        prev->next = new;
+        new->next = tmp;
+        return head;
+    }
+}
+
+/**
  * Function:  new_node
  * -------------------
  * @brief  Allows to dynamically allocate memory for a new node to be added to the linked list.
@@ -31,7 +94,7 @@ node_t *new_node(char *val)
 
     node_t *temp = (node_t *)emalloc(sizeof(node_t));
 
-    temp->word = strdup(val);
+    temp->subject = strdup(val);
     temp->next = NULL;
 
     return temp;
@@ -105,7 +168,7 @@ node_t *add_inorder(node_t *list, node_t *new)
 
     for (curr = list; curr != NULL; curr = curr->next)
     {
-        if (strcmp(new->word, curr->word) > 0)
+        if (strcmp(new->subject, curr->subject) > 0)
         {
             prev = curr;
         }

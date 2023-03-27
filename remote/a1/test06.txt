@@ -1,3 +1,0 @@
-FLIGHTS FROM Panama TO New York, United States:
-AIRLINE: Copa Airlines (CMP) ORIGIN: Tocumen Intl (MPTO), Panama City
-AIRLINE: United Airlines (UAL) ORIGIN: Tocumen Intl (MPTO), Panama City

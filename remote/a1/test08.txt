@@ -1,4 +1,0 @@
-FLIGHTS FROM Toronto, Canada TO Cancun, Mexico:
-AIRLINE: Air Canada (ACA) ROUTE: CYYZ-MMUN
-AIRLINE: Air Transat (TSC) ROUTE: CYYZ-MMUN
-AIRLINE: WestJet (WJA) ROUTE: CYYZ-MMUN
