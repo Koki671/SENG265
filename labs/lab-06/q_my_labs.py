@@ -44,9 +44,7 @@ def every_lab(todays_date):
     for i in range(4):
         lab_dates.append(start_date)
         start_date += datetime.timedelta(days=7)
-    return lab_dates
-
-
+    return lab_d
 
 if __name__ == "__main__":
     main()

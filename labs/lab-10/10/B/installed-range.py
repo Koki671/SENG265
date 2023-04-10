@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Obtain and print the names of the packages without the cpu architecture (similar to A\installed4.py) that were installed within
+Obtain and print the names of the packages without the cpu architecture (similar to A\installed4.py) that
+ were installed within
 the range of dates provided by the user (i.e., variables date_from and date_to). 
 
 * Dates provided by the user should follow the format yyyy-mm-dd
@@ -19,7 +20,7 @@ def main():
     date_from = sys.argv[1]
     date_to   = sys.argv[2] 
     with open("dpkg.log") as file:
-        
+
         for line in file:
             if 'installed' in line:
                 # Extract the date and package name from the line

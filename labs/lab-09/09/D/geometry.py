@@ -15,7 +15,6 @@ class Point:
 
     def translate(self, dx, dy):
         return Point(self.x + dx, self.y + dy)
-
 class Circle:
     def __init__(self, center=Point(), radius=0):
         self.center = center
@@ -32,8 +31,6 @@ class Circle:
 
     def translate(self, dx, dy):
         return Circle(self.center.translate(dx, dy), self.radius)
-    
-
 class Rectangle:
     def __init__(self, upper_left, lower_right):
         self.upper_left = upper_left
