@@ -1,0 +1,9 @@
+def da(a:int):
+    a+=2
+
+
+def main(void):
+    a = 1
+    da(a)
+    print(a)
+    
